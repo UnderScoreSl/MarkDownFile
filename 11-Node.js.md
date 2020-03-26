@@ -49,6 +49,8 @@ NVM_SYMLINK   C:\dev\nodejs
 
 ### 安装node.js环境
 
+（nvm是管理node.js的版本的，npm是管理node.js的第三方包或插件的）
+
 nvm list 查看安装的node列表
 
 nvm install <version> 

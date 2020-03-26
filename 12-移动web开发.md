@@ -4,6 +4,9 @@
 
 
 
+
+
+<h1 style="color:red">Hello</h1>
 ## 屏幕
 
 对角线长度：3.5"/ 4.7"/ 5.5"（英寸in）
@@ -30,7 +33,27 @@ css像素：放大缩放，100%
 
 ## 调试
 
-f12 / 真机调试
+chrome 真机调试
+
++ ```bash
+  npm i -g live-server
+  ```
+
++ 手机打开开发者选项,  安装google浏览器App,  打开  
+
++ 打开项目live-server,  PC google浏览器F12>more tools>remote devices>可能需要手机端验证等
+
++ 打开手机浏览器, 输入live-server的localhost>ok
+
++ 可以利用投屏软件在pc端显示, 或者继续用chrome,devtools的inspect显示操作等等
+
+
+
+spy-debugger
+
+npm
+
+
 
 
 
@@ -239,9 +262,17 @@ not：取反，写在and之前
 
 
 
+## 移动端适配方案
 
+### 传统百分比+固定高度布局
 
-## web-em/rem 适配
+固定屏幕为理想视口
+
+少许媒体查询设置字体
+
+水平百分比布局或用弹性布局
+
+### web-em/rem 适配
 
 em：长度单位，参照当前元素字号，如果没有设置，则参考父元素直到浏览器默认字号
 

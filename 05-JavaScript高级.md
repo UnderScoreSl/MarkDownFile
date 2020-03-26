@@ -1,15 +1,19 @@
 ---
+​---单页开始输入则是前言
+
 学习目标:
   - 理解面向对象开发思想
   - 掌握 JavaScript 面向对象开发相关模式
   - 掌握在 JavaScript 中使用正则表达式
-  - 
-typora-copy-images-to media
 ---
+
+
+
+
 
 # JavaScript 高级
 
-<img src="./media/Unofficial_JavaScript_logo_2.svg.png" width="400" alt="">
+
 
 ## 课程介绍
 
@@ -94,11 +98,7 @@ typora-copy-images-to media
 
 > [JavaScript 标准参考教程 - JavaScript 语言的历史](http://javascript.ruanyifeng.com/introduction/history.html)
 
-- JavaScript 的诞生
-- JavaScript 与 Ecmascript 的关系
-- JavaScript 与 Java 的关系
-- JavaScript 的版本
-- JavaScript 周边大事记
+
 
 #### 小结
 
@@ -159,17 +159,17 @@ JavaScript 有 5 种简单数据类型：`Undefined、Null、Boolean、Number、
 - `instanceof`
 - `Object.prototype.toString.call()`
 
-#### 值类型和引用类型在内存中的存储方式（画图说明）
+#### 值类型和引用类型在内存中的存储方式
 
 - 值类型按值存储
 - 引用类型按引用存储
 
-#### 值类型复制和引用类型复制（画图说明）
+#### 值类型复制和引用类型复制
 
 - 值类型按值复制
 - 引用类型按引用复制
 
-#### 值类型和引用类型参数传递（画图说明）
+#### 值类型和引用类型参数传递
 
 - 值类型按值传递
 - 引用类型按引用传递
@@ -204,19 +204,19 @@ JavaScript 运行分为两个阶段：
 先预解析全局作用域，然后执行全局作用域中的代码，
 在执行全局代码的过程中遇到函数调用就会先进行函数预解析，然后再执行函数内代码。
 
----
-
-## JavaScript 面向对象编程
 
 
 
-### 面向对象介绍
+
+
+
+### <span style="color:skyblue">面向对象介绍</span>
+
+
 
 #### 什么是对象
 
 > Everything is object （万物皆对象）
-
-<img src="./media/20160823024542444.jpg" alt="">
 
 对象到底是什么，我们可以从两次层次来理解。
 
@@ -242,7 +242,7 @@ ECMAScript-262 把对象定义为：**无序属性的集合，其属性可以包
 
 > 面向对象不是新的东西，它只是过程式代码的一种高度封装，目的在于提高代码的开发效率和可维护性。
 
-<img src="./media/664ba37eeee9f4623c06c066867f1d38_r.jpg" width="400" alt="">
+
 
 面向对象编程 —— Object Oriented Programming，简称 OOP ，是一种**编程开发思想**。
 它将真实世界各种复杂的关系，抽象为一个个对象，然后由对象之间的分工与合作，完成对真实世界的模拟。
@@ -849,9 +849,7 @@ Array.prototype.getSum = function () {
 
 在线演示地址：[贪吃蛇](https://lipengzhou.github.io/new-snake/)
 
-#### 案例目标
 
-游戏的目的是用来体会js高级语法的使用 不需要具备抽象对象的能力，使用面向对象的方式分析问题，需要一个漫长的过程。
 
 ### 功能实现
 
@@ -1433,9 +1431,8 @@ if (true) {
 
 `call()` 方法调用一个函数, 其具有一个指定的 `this` 值和分别地提供的参数(参数的列表)。
 
-<p class="danger">
+
   注意：该方法的作用和 `apply()` 方法类似，只有一个区别，就是 `call()` 方法接受的是若干个参数的列表，而 `apply()` 方法接受的是一个包含多个参数的数组。
-</p>
 
 语法：
 
@@ -1456,9 +1453,8 @@ fun.call(thisArg[, arg1[, arg2[, ...]]])
 
 `apply()` 方法调用一个函数, 其具有一个指定的 `this` 值，以及作为一个数组（或类似数组的对象）提供的参数。
 
-<p class="danger">
+
   注意：该方法的作用和 `call()` 方法类似，只有一个区别，就是 `call()` 方法接受的是若干个参数的列表，而 `apply()` 方法接受的是一个包含多个参数的数组。
-</p>
 
 语法：
 
@@ -1819,7 +1815,11 @@ function factorial (num) {
 - 菜单树
 - 遍历 DOM 树
 
----
+
+
+
+
+
 
 ## 正则表达式
 
@@ -2312,13 +2312,13 @@ var obj = {
   1: 'b',
   2: 'c',
   length: 3
-}
+};
 
-;[].push.call(obj, 'd')
+[].push.call(obj, 'd');
 
-console.log([].slice.call(obj))
+console.log([].slice.call(obj));
 
-;[].forEach.call(obj, function (num, index) {
+[].forEach.call(obj, function (num, index) {
   console.log(num)
 })
 ```

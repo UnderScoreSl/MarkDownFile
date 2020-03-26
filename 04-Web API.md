@@ -4,7 +4,6 @@
   - 掌握常见的浏览器提供的API的调用方式
   - 能通过API开发常见的页面交互功能
   - 能够利用搜索引擎解决问题
-typora-copy-images-to: media
 ---
 
 # Web API
@@ -32,7 +31,7 @@ API（Application Programming Interface,应用程序编程接口）是一些预�
 
 ### JavaScript的组成
 
-![1496912475691](media/1496912475691.png)
+
 
 #### ECMAScript - JavaScript的核心 
 
@@ -126,7 +125,7 @@ clearInterval(timerId);
 
 ### location对象
 
-location对象是window对象下的一个属性，时候的时候可以省略window对象
+location对象是window对象下的一个属性
 
 location可以获取或者设置浏览器地址栏的URL
 
@@ -205,6 +204,12 @@ console.log(getQuery(location.href));
 
 通过platform可以判断浏览器所在的系统平台类型.
 
+
+
+
+
+
+
 ## DOM
 
 ### DOM的概念
@@ -276,22 +281,7 @@ getChildren(doc);
 
 ## 获取页面元素
 
-## 案例
-1.点击按钮弹出对话框
-2.点击按钮修改超链接的地址和热点文字
-3.点击(每个)图片弹出对话框
-4.点击图片设置自身宽和高
-5.点击按钮修改每个图片的title属性
-6.点击按钮显示哈哈(排他功能)
-7.点击按钮显示和隐藏div
-8.显示和隐藏二维码
-9.点击按钮修改所有p标签内容
-10.点击按钮修改所有文本框内容
-11.点击按钮切换图片
-12.点击超链接停止跳转页面
-13.点击小图显示大图
-14.美女相册
-15点击按钮选中性别和兴趣
+
 
 
 ### 为什么要获取页面元素
@@ -343,10 +333,10 @@ for (var i = 0; i < mains.length; i++) {
 ### 根据选择器获取元素
 
 ```javascript
-var text = document.querySelector('#text');
+var text = document.querySelector('#text'); // 找id为text的标签
 console.log(text);
 
-var boxes = document.querySelectorAll('.box');
+var boxes = document.querySelectorAll('.box'); // 找类名为box的标签
 for (var i = 0; i < boxes.length; i++) {
   var box = boxes[i];
   console.log(box);
@@ -484,16 +474,7 @@ var box = document.getElementById('box');
 box.className = 'clearfix';
 ```
 
-### 案例
 
-- 开关灯
-- 点击按钮变色
-- 图片切换二维码案例
-- 当前输入的文本框高亮显示
-- 点击按钮改变div的大小和位置
-- 列表隔行变色、高亮显示
-- 京东商品展示
-- tab选项卡切换
 
 
 ## 创建元素的三种方式
@@ -525,11 +506,6 @@ document.body.appendChild(div);
 - 优化后与document.createElement性能相近
 
 
-### 案例
-
-- 动态创建列表，高亮显示
-- 根据数据动态创建表格
-- 模拟百度搜索文本框
 
 ## 节点操作
 
@@ -547,9 +523,7 @@ var text = document.createElement('p');
 body.replaceChild(text, div);
 ```
 
-案例：
 
-​	权限选择
 
 ### 节点层级
 
@@ -656,11 +630,7 @@ function removeEventListener(element, type, fn) {
 - event.target || event.srcElement 用于获取触发事件的元素
 - event.preventDefault() 取消默认行为
 
-#### 案例
 
-- 跟着鼠标飞的天使
-- 鼠标点哪图片飞到哪里
-- 获取鼠标在div内的坐标
 
 ### 阻止事件传播的方式
 
